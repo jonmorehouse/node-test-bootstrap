@@ -1,3 +1,4 @@
+console.log "ASDF"
 path = require 'path'
 c = require 'multi-config'
 
