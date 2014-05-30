@@ -14,3 +14,8 @@ global.baseDirectory = path.resolve path.join __dirname, ".."
 # initialize the project require loaders
 require "./require"
 
+module.exports = 
+  runner: require "./runner"
+  tasks: require "./tasks"
+
+
