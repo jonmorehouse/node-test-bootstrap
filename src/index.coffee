@@ -1,4 +1,5 @@
 path = require 'path'
+sh = require "shelljs"
 c = require 'multi-config'
 
 # print out all call stack errors - this helps a ton!
@@ -9,7 +10,7 @@ process.on 'uncaughtException', (err) ->
 global.p = console.log
 
 # set the base directory as the directory of the executing script
-baseDirectory = path.dirname require.main.filename
+baseDirectory = sh.pwd()
 # make sure to remove any trailing bins. May need to update this in the future ...
 re = /\.*\/bin$/
 global.baseDirectory = baseDirectory.split(re)[0]
@@ -25,4 +26,4 @@ try
   bs = testRequire "bootstrap"
   for key,value of bs
     module.exports[key] = value
-catch 
+catch
