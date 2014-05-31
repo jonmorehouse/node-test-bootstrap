@@ -21,4 +21,8 @@ module.exports =
   runner: require "./runner"
   tasks: require "./tasks"
 
-bs = testRequire "bootstrap"
+try
+  bs = testRequire "bootstrap"
+  for key,value of bs
+    module.exports[key] = value
+catch 
