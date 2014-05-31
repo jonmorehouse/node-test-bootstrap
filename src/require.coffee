@@ -1,12 +1,7 @@
 path = require 'path'
 
 _require = (projectDir, _path) ->
-
-  p projectDir
-  _p = path.join baseDirectory, projectDir, _path
-  try
-    require _p
-  catch
+  require path.join baseDirectory, projectDir, _path
 
 global.fixtureRequire = (_path) ->
   return _require "test/fixtures", _path
