@@ -1,11 +1,28 @@
 # Node Test Bootstrap
-> Collection of utilities and methods that I use in node.js project test suites
+> A Collection of utilities and methods that I use in node.js projects (dev dependencies only) 
 
 ## Usage
 
-I use this package for coffee-script apps and projects using nodeunit and jasmine test suites. This is a handy place to share global helpers and utilities amongst various apps.
+This module tries to make development easier by making it quicker to get up and running with node tdd environments.
 
-## Installation
+~~~ coffee-script
+# Cakefile
+testBootstrap = require "test-bootstrap"
+
+task "test", "Test" ->
+  testBootstrap.tasks.nodeunit()
+
+~~~
+
+~~~ coffee-script
+# some_test.coffee
+testBootstrap = require "test-bootstrap"
+
+# various global helpers available here
+# this app also sources test/bootstrap.coffee and imports its exports into the test-bootstrap namespace
+~~~
+
+## System dependencies
 
 ~~~ sh
 $ sudo apt-get install -y cmake 
