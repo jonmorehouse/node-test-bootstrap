@@ -18,7 +18,6 @@
   "dependencies": {
     "coffee-script": "^1.7.1",
     "multi-config": "git://github.com/jonmorehouse/node-multi-config",
-    "nodegit": "~0.1.3",
     "nodeunit": "~0.9.0",
     "shelljs": "^0.3.0"
   }

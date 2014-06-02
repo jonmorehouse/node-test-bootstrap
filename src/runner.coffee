@@ -12,13 +12,15 @@ systemRunner = (commandString) ->
 
 # opt to not use splat so as to allow for simplicity between this and the jasmine runner
 nodeunitRunner = (_path) ->
-  reporter = nodeunit.reporters.verbose
-  reporter.run [_path]
+  command = "nodeunit #{_path}"
+  systemRunner command
   
+
 # run jasmine specs
 # alternatively can run with the runner command
 jasmineRunner = (_path) ->
-  command = "jasmine-node"
+  command = "jasmine-node #{_path}"
+  systemRunner command
   
 module.exports = 
   system: systemRunner
