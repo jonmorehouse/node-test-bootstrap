@@ -15,6 +15,7 @@ baseDirectory = sh.pwd()
 re = /\.*\/bin$/
 global.baseDirectory = baseDirectory.split(re)[0]
 
+
 # initialize the project require loaders
 require "./require"
 
@@ -26,4 +27,6 @@ try
   bs = testRequire "bootstrap"
   for key,value of bs
     module.exports[key] = value
-catch
+catch e
+
+
