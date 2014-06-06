@@ -14,12 +14,11 @@ systemRunner = (commandString) ->
 nodeunitRunner = (_path) ->
   command = "nodeunit #{_path}"
   systemRunner command
-  
 
 # run jasmine specs
 # alternatively can run with the runner command
 jasmineRunner = (_path) ->
-  command = "jasmine-node #{_path}"
+  command = "jasmine-node --coffee --verbose #{_path}"
   systemRunner command
   
 module.exports = 

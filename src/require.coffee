@@ -6,7 +6,6 @@ requirePath = (projectDir, _path) ->
 _require = (projectDir, _path) ->
   require requirePath projectDir, _path
 
-
 global.fixtureRequire = (_path) ->
   _require "test/fixtures", _path
 
