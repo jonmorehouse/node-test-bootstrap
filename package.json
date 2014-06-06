@@ -23,6 +23,6 @@
     "shelljs": "^0.3.0"
   },
   "peerDependencies": {
-    "multi-config": "git://github.com/jonmorehouse/node-multi-config",
+    "multi-config": "git://github.com/jonmorehouse/node-multi-config"
   }
 }
