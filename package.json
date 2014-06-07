@@ -20,9 +20,7 @@
     "extend": "^1.2.1",
     "multi-config": "git://github.com/jonmorehouse/node-multi-config",
     "nodeunit": "~0.9.0",
+    "multi-config": "git://github.com/jonmorehouse/node-multi-config",
     "shelljs": "^0.3.0"
-  },
-  "peerDependencies": {
-    "multi-config": "git://github.com/jonmorehouse/node-multi-config"
   }
 }
