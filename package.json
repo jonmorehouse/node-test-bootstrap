@@ -2,7 +2,7 @@
   "name": "test-bootstrap",
   "version": "0.0.0",
   "description": "node test package",
-  "main": "src/index.coffee",
+  "main": "js/index.js",
   "scripts": {
     "test": ""
   },
