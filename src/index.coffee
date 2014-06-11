@@ -20,6 +20,7 @@ require "./require"
 module.exports = 
   runner: require "./runner"
   tasks: require "./tasks"
+  benchmark: require "./benchmark"
 
 try
   bs = testRequire "bootstrap"
