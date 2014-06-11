@@ -22,7 +22,8 @@
 
   module.exports = {
     runner: require("./runner"),
-    tasks: require("./tasks")
+    tasks: require("./tasks"),
+    benchmark: require("./benchmark")
   };
 
   try {

@@ -4,7 +4,7 @@
   "description": "node test package",
   "main": "js/index.js",
   "scripts": {
-    "test": ""
+    "build": "coffee -c -o js src"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
     "extend": "^1.2.1",
     "nodeunit": "~0.9.0",
     "shelljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.7.1"
   }
 }
