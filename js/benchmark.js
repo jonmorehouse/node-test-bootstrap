@@ -11,7 +11,7 @@
   stop = function(key) {
     var hrend;
     hrend = process.hrtime(_hash[key]);
-    return console.info("key time (hr): %ds %dms", hrend[0], hrend[1] / 1000000);
+    return console.info("" + key + " time (hr): %ds %dms", hrend[0], hrend[1] / 1000000);
   };
 
   module.exports = {
