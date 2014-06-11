@@ -1,6 +1,5 @@
 path = require 'path'
 sh = require "shelljs"
-c = require 'multi-config'
 
 # print out all call stack errors - this helps a ton!
 process.on 'uncaughtException', (err) ->
@@ -14,7 +13,6 @@ baseDirectory = sh.pwd()
 # make sure to remove any trailing bins. May need to update this in the future ...
 re = /\.*\/bin$/
 global.baseDirectory = baseDirectory.split(re)[0]
-
 
 # initialize the project require loaders
 require "./require"

@@ -16,8 +16,13 @@ jasmine = (_path) ->
   _path ?= testDirectory
   r.jasmine _path
 
+mocha = (_path) ->
+  _path ?= testDirectory
+  r.mocha _path
+
 module.exports = 
   build: build
   jasmine: jasmine
   nodeunit: nodeunit
+  mocha: mocha
 

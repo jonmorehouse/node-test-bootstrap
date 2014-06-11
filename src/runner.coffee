@@ -20,9 +20,14 @@ nodeunitRunner = (_path) ->
 jasmineRunner = (_path) ->
   command = "jasmine-node --coffee --verbose #{_path}"
   systemRunner command
-  
+
+mochaRunner = (_path) ->
+  command = "mocha -R dot --no-exit --compilers coffee:coffee-script/register #{_path}"
+  systemRunner command
+
 module.exports = 
   system: systemRunner
   jasmine: jasmineRunner
   nodeunit: nodeunitRunner
+  mocha: mochaRunner
 
